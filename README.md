@@ -1,6 +1,11 @@
 # videojs-share
 
-Share plugin for [video.js][videojs]. Allows user to copy video url / embed code (via [clipboard.js][clipboardjs]) and share video to social networks (via [vanilla-sharing][vanilla-sharing]).
+Share plugin for [video.js][videojs]. Allows user to copy video url / embed code and share video to social networks.
+
+[![npm](https://img.shields.io/npm/v/videojs-share.svg)](https://www.npmjs.com/package/videojs-share)
+[![Build Status](https://travis-ci.org/mkhazov/videojs-share.svg?branch=master)](https://travis-ci.org/mkhazov/videojs-share)
+[![David](https://david-dm.org/neuron-digital/videojs-share.svg)](https://david-dm.org/neuron-digital/videojs-share)
+[![David](https://david-dm.org/neuron-digital/videojs-share/dev-status.svg)](https://david-dm.org/neuron-digital/videojs-share?type=dev)
 
 ## Table of Contents
 
