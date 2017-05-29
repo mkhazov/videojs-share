@@ -13,7 +13,7 @@ class ShareButton extends Button {
   }
 
   handleClick() {
-    this.player_.getChild('ShareOverlay').open();
+    this.player().getChild('ShareOverlay').open();
   }
 }
 
