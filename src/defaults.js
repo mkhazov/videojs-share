@@ -1,7 +1,7 @@
 const url = getUrl();
 
 function getUrl() {
-  return (window.parent !== window) ? document.referrer : window.location.href;
+  return window.location.href;
 }
 
 function getRedirectUri() {
