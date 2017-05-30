@@ -1,7 +1,7 @@
 import Clipboard from 'clipboard';
 import * as sharing from 'vanilla-sharing';
 
-import { isTouchDevice } from './utils';
+import { isTouchDevice, filterSocials } from './utils';
 
 import fb from './icons/fb.svg';
 import tw from './icons/tw.svg';
@@ -34,7 +34,7 @@ export default class ShareModalContent {
     this.player = player;
 
     this.options = options;
-    this.socials = options.socials || Object.keys(icons);
+    this.socials = filterSocials(options.socials);
 
     this.copyBtnTextClass = 'vjs-share__btn-text';
     this.socialBtnClass = 'vjs-share__social';
@@ -50,7 +50,15 @@ export default class ShareModalContent {
   }
 
   get socialOptions() {
-    const { url, title, description, image, fbAppId, isVkParse, redirectUri } = this.options;
+    const {
+      url,
+      title,
+      description,
+      image,
+      fbAppId,
+      isVkParse,
+      redirectUri
+    } = this.options;
 
     return {
       url,
