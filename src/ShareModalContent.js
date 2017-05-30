@@ -107,14 +107,6 @@ export default class ShareModalContent {
         <div class="vjs-share__socials">
           ${this._getSocialItems().join('')}
         </div>
-
-        ${this.socials.length > 5 ? `
-          <button class="vjs-share__toggle">
-            <svg width="16" height="16" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 7V.43H7V7H0v2h7v7h2V9h7V7H9z" fill="#B7B7B7"></path>
-            </svg>
-          </button>
-        ` : ''}
       </div>
     </div>`;
 
@@ -160,19 +152,12 @@ export default class ShareModalContent {
   }
 
   _initToggle() {
-    const toggleBtn = this.content.querySelector('.vjs-share__toggle');
     const iconsList = this.content.querySelector('.vjs-share__socials');
 
-    if (this.socials.length > 10) {
-      iconsList.classList.add('vertical');
+    if (this.socials.length > 10 || (window.innerWidth <= 180 && this.socials.length > 6)) {
+      iconsList.style.height = 'calc((2em + 5px) * 2)';
     } else {
       iconsList.classList.add('horizontal');
-    }
-
-    if (toggleBtn) {
-      toggleBtn.addEventListener('click', () => {
-        iconsList.classList.toggle('vjs-share__socials_show-all');
-      });
     }
   }
 

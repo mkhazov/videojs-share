@@ -4,6 +4,8 @@
   }
 }
 
+$btnSize: 2em;
+
 .video-js {
   &.vjs-videojs-share_open {
     .vjs-modal-dialog {
@@ -51,7 +53,7 @@
     &__middle,
     &__bottom {
       display: flex;
-      width: 270px;
+      width: 80%;
     }
 
     &__top,
@@ -144,32 +146,11 @@
 
     &__socials {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       align-content: flex-start;
-      flex: 0 0 230px;
-      height: 40px;
-      overflow: hidden;
+      font-size: 15px;
       transition: width 0.3s ease-out, height 0.3s ease-out;
-
-      &.vertical {
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      &_show-all {
-        &.horizontal {
-          .vjs-share__social {
-            transform: translateX(-230px);
-          }
-        }
-
-        &.vertical {
-          height: 134px;
-        }
-
-        & + .vjs-share__toggle svg {
-          transform: rotate(45deg);
-        }
-      }
     }
 
     &__social {
@@ -177,10 +158,10 @@
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
-      width: 40px;
-      height: 40px;
-      margin-right: 6px;
-      margin-bottom: 6px;
+      width: $btnSize;
+      height: $btnSize;
+      margin-right: 4px;
+      margin-bottom: 4px;
       cursor: pointer;
       transition: transform 0.3s ease-out, filter 0.2s ease-out;
       border: none;
@@ -189,8 +170,8 @@
       @include iconHover();
 
       svg {
-        max-width: 21px;
-        max-height: 21px;
+        max-width: 1em;
+        max-height: 1em;
       }
 
       &_vk {
@@ -238,23 +219,6 @@
       }
     }
 
-    &__toggle {
-      width: 40px;
-      height: 40px;
-      padding: 10px 12px;
-      background-color: #383838;
-      border-radius: 1px;
-      border: none;
-      cursor: pointer;
-      outline: none;
-
-      @include iconHover();
-
-      svg {
-        transition: transform 0.3s ease-out;
-      }
-    }
-
     &__bottom {
       justify-content: center;
     }
@@ -290,7 +254,27 @@
     }
   }
 
+  @media (min-width: 320px) {
+    .vjs-share {
+      &__top,
+      &__middle {
+        width: 270px;
+      }
+
+      &__social {
+        margin-right: 6px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+
   @media (min-width: 660px) {
+    .vjs-share {
+      &__socials {
+        font-size: 20px;
+      }
+    }
+
     &.vjs-videojs-share_open {
       .vjs-modal-dialog {
         .vjs-close-button {
