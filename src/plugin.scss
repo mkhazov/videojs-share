@@ -4,8 +4,6 @@
   }
 }
 
-$btnSize: 2em;
-
 .video-js {
   &.vjs-videojs-share_open {
     .vjs-modal-dialog {
@@ -53,7 +51,6 @@ $btnSize: 2em;
     &__middle,
     &__bottom {
       display: flex;
-      width: 80%;
     }
 
     &__top,
@@ -63,7 +60,7 @@ $btnSize: 2em;
     }
 
     &__title {
-      margin: 0 auto;
+      align-self: center;
       font-size: 22px;
       color: #fff;
     }
@@ -149,7 +146,6 @@ $btnSize: 2em;
       flex-wrap: wrap;
       justify-content: center;
       align-content: flex-start;
-      font-size: 15px;
       transition: width 0.3s ease-out, height 0.3s ease-out;
     }
 
@@ -158,8 +154,8 @@ $btnSize: 2em;
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
-      width: $btnSize;
-      height: $btnSize;
+      width: 40px;
+      height: 40px;
       margin-right: 4px;
       margin-bottom: 4px;
       cursor: pointer;
@@ -170,8 +166,8 @@ $btnSize: 2em;
       @include iconHover();
 
       svg {
-        max-width: 1em;
-        max-height: 1em;
+        width: 100%;
+        max-height: 20px;
       }
 
       &_vk {
@@ -269,12 +265,6 @@ $btnSize: 2em;
   }
 
   @media (min-width: 660px) {
-    .vjs-share {
-      &__socials {
-        font-size: 20px;
-      }
-    }
-
     &.vjs-videojs-share_open {
       .vjs-modal-dialog {
         .vjs-close-button {
