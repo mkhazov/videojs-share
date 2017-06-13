@@ -16,10 +16,10 @@
 
       .vjs-close-button {
         position: absolute;
-        right: 0.5em;
-        top: 1em;
-        width: 3em;
-        height: 3em;
+        right: 5px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
         color: #fff;
         cursor: pointer;
         opacity: 0.9;
@@ -159,6 +159,7 @@
       margin-right: 6px;
       margin-bottom: 6px;
       cursor: pointer;
+      font-size: 8px;
       transition: transform 0.3s ease-out, filter 0.2s ease-out;
       border: none;
       outline: none;
@@ -254,8 +255,8 @@
     &.vjs-videojs-share_open {
       .vjs-modal-dialog {
         .vjs-close-button {
-          right: 2em;
-          top: 2em;
+          right: 20px;
+          top: 20px;
         }
       }
     }
