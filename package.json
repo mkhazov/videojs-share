@@ -38,7 +38,7 @@
     "watch:js-modules": "rollup -c scripts/modules.rollup.config.js -w",
     "watch:js-umd": "rollup -c scripts/umd.rollup.config.js -w",
     "watch:test": "rollup -c scripts/test.rollup.config.js -w",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "prepush": "npm run lint",
     "precommit": "npm run docs && git add README.md"
   },
@@ -75,7 +75,7 @@
   },
   "dependencies": {
     "clipboard": "^1.6.1",
-    "vanilla-sharing": "1.2.0",
+    "vanilla-sharing": "^2.0.0",
     "video.js": "^5.19.2"
   },
   "devDependencies": {
