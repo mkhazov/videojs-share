@@ -154,10 +154,10 @@
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
-      width: 40px;
-      height: 40px;
-      margin-right: 4px;
-      margin-bottom: 4px;
+      width: 32px;
+      height: 32px;
+      margin-right: 6px;
+      margin-bottom: 6px;
       cursor: pointer;
       transition: transform 0.3s ease-out, filter 0.2s ease-out;
       border: none;
@@ -250,20 +250,6 @@
     }
   }
 
-  @media (min-width: 320px) {
-    .vjs-share {
-      &__top,
-      &__middle {
-        width: 270px;
-      }
-
-      &__social {
-        margin-right: 6px;
-        margin-bottom: 6px;
-      }
-    }
-  }
-
   @media (min-width: 660px) {
     &.vjs-videojs-share_open {
       .vjs-modal-dialog {
@@ -271,6 +257,13 @@
           right: 2em;
           top: 2em;
         }
+      }
+    }
+
+    .vjs-share {
+      &__social {
+        width: 40px;
+        height: 40px;
       }
     }
   }
