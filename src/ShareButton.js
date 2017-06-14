@@ -8,6 +8,7 @@ class ShareButton extends Button {
     super(player, options);
 
     this.addClass('vjs-menu-button');
+    this.addClass('vjs-share-control');
     this.addClass('vjs-icon-share');
     this.controlText(player.localize('Share'));
   }
