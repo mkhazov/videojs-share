@@ -86,7 +86,7 @@ export default class ShareModalContent {
       </div>
 
       <div class="vjs-share__middle">
-        <div class="vjs-share__subtitle hidden-sm">${this.player.localize('Direct Link')}:</div>
+        <div class="vjs-share__subtitle hidden-xs">${this.player.localize('Direct Link')}:</div>
         <div class="vjs-share__short-link-wrapper">
           <input class="vjs-share__short-link" type="text" readonly="true" value="${this.options.url}">
           <div class="vjs-share__btn">
@@ -94,8 +94,8 @@ export default class ShareModalContent {
           </div>
         </div>
 
-        <div class="vjs-share__subtitle hidden-sm">${this.player.localize('Embed Code')}:</div>
-        <div class="vjs-share__short-link-wrapper hidden-sm">
+        <div class="vjs-share__subtitle hidden-xs">${this.player.localize('Embed Code')}:</div>
+        <div class="vjs-share__short-link-wrapper hidden-xs">
           <input class="vjs-share__short-link" type="text" readonly="true" value="${this.options.embedCode}">
           <div class="vjs-share__btn">
             ${copyBtn}

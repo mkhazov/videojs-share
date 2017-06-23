@@ -225,7 +225,7 @@
     }
   }
 
-  @media (max-height: 200px) {
+  @media (max-height: 220px) {
     .vjs-share {
       .hidden-xs {
         display: none;
@@ -235,8 +235,6 @@
 
   @media (max-height: 350px) {
     .vjs-share {
-      max-height: 190px;
-
       .hidden-sm {
         display: none;
       }
