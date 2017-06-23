@@ -2,6 +2,12 @@
 
 Share plugin for [video.js][videojs]. Allows user to copy video url / embed code and share video to social networks.
 
+List of supported social networks: Facebook, Twitter, Google Plus, LinkedIn, VK, Odnoklassniki, Mail.ru.
+Supported messengers: Messenger, Telegram, Whatsapp, Viber.
+
+Sharing functioonality provided by [vanilla-sharing][vanilla-sharing] library.
+Copying to clipboard is done via [clipboard.js][clipboardjs].
+
 [![npm](https://img.shields.io/npm/v/videojs-share.svg)](https://www.npmjs.com/package/videojs-share)
 [![Build Status](https://travis-ci.org/mkhazov/videojs-share.svg?branch=master)](https://travis-ci.org/mkhazov/videojs-share)
 [![David](https://david-dm.org/neuron-digital/videojs-share.svg)](https://david-dm.org/neuron-digital/videojs-share)
@@ -18,6 +24,7 @@ Share plugin for [video.js][videojs]. Allows user to copy video url / embed code
   - [`<script>` Tag](#script-tag)
   - [Browserify/CommonJS](#browserifycommonjs)
   - [RequireJS/AMD](#requirejsamd)
+  - [Plugin initialization](#plugin-initialization)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Installation
@@ -37,11 +44,6 @@ This is the simplest case. Get the script in whatever way you prefer and include
 ```html
 <script src="//path/to/video.min.js"></script>
 <script src="//path/to/videojs-share.min.js"></script>
-<script>
-  var player = videojs('my-video');
-
-  player.share();
-</script>
 ```
 
 ### Browserify/CommonJS
@@ -55,10 +57,6 @@ var videojs = require('video.js');
 // attached to the `Player.prototype`; so, there is no need to assign it
 // to a variable.
 require('videojs-share');
-
-var player = videojs('my-video');
-
-player.share();
 ```
 
 ### RequireJS/AMD
@@ -73,7 +71,31 @@ require(['video.js', 'videojs-share'], function(videojs) {
 });
 ```
 
+### Plugin initialization
 
-[videojs]: http://videojs.com/
-[clipboardjs]: https://clipboardjs.com
+```js
+var player = videojs('my-video');
+
+var shareOptions = {
+  socials: ['fb', 'tw', 'gp', 'messenger', 'linkedin', 'telegram', 'whatsapp', 'viber', 'vk', 'ok', 'mail'],
+
+  url: window.location.href,
+  title: 'videojs-share',
+  description: 'video.js share plugin',
+  image: 'https://dummyimage.com/1200x630',
+
+  // required for Facebook and Messenger
+  fbAppId: '12345', 
+  // optional for Facebook
+  redirectUri: window.location.href + '#close',
+
+  // optional for VK
+  isVkParse: true,
+}
+
+player.share(shareOptions);
+```
+
+[videojs]: https://github.com/videojs/video.js
+[clipboardjs]: https://github.com/zenorocha/clipboard.js
 [vanilla-sharing]: https://github.com/avdeev/vanilla-sharing
