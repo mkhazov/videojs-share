@@ -1,3 +1,10 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/mkhazov/videojs-share/compare/v1.0.0...v1.0.1) (2017-06-27)
+
+### Chores
+
+* remove preversion script ([b923a73](https://github.com/mkhazov/videojs-share/commit/b923a73))
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/mkhazov/videojs-share/compare/v0.4.0...v1.0.0) (2017-06-23)
 
