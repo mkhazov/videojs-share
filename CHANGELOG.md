@@ -3,6 +3,7 @@
 
 ### Chores
 
+* vanilla-sharing@2.0.1 ([22f4182](https://github.com/mkhazov/videojs-share/commit/22f4182))
 * remove preversion script ([b923a73](https://github.com/mkhazov/videojs-share/commit/b923a73))
 
 <a name="1.0.0"></a>
