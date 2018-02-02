@@ -77,7 +77,7 @@ require(['video.js', 'videojs-share'], function(videojs) {
 var player = videojs('my-video');
 
 var shareOptions = {
-  socials: ['fb', 'tw', 'gp', 'messenger', 'linkedin', 'telegram', 'whatsapp', 'viber', 'vk', 'ok', 'mail'],
+  socials: ['fb', 'tw', 'reddit', 'gp', 'messenger', 'linkedin', 'telegram', 'whatsapp', 'viber', 'vk', 'ok', 'mail'],
 
   url: window.location.href,
   title: 'videojs-share',
