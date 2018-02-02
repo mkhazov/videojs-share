@@ -13,7 +13,7 @@ function getEmbedCode() {
 }
 
 function getSocials() {
-  return ['fb', 'tw', 'gp', 'messenger', 'linkedin', 'vk', 'ok', 'mail', 'telegram', 'whatsapp', 'viber'];
+  return ['fb', 'tw', 'reddit', 'gp', 'messenger', 'linkedin', 'vk', 'ok', 'mail', 'telegram', 'whatsapp', 'viber'];
 }
 
 export default {
