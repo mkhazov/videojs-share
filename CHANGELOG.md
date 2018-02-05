@@ -1,3 +1,12 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/mkhazov/videojs-share/compare/v1.0.1...v1.1.0) (2018-02-05)
+
+### Chores
+
+* add repository field to package.json ([4343950](https://github.com/mkhazov/videojs-share/commit/4343950))
+* update travis.yml ([5fe5903](https://github.com/mkhazov/videojs-share/commit/5fe5903))
+* upgrade jsdoc to 3.5.5 ([570c8f1](https://github.com/mkhazov/videojs-share/commit/570c8f1))
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/mkhazov/videojs-share/compare/v1.0.0...v1.0.1) (2017-06-27)
 
