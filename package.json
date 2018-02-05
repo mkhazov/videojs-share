@@ -74,7 +74,7 @@
   },
   "dependencies": {
     "clipboard": "^1.6.1",
-    "vanilla-sharing": "2.0.1",
+    "vanilla-sharing": "^5.1.0",
     "video.js": "^5.19.2"
   },
   "devDependencies": {
