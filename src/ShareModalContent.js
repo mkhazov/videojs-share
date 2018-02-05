@@ -3,7 +3,7 @@ import * as sharing from 'vanilla-sharing';
 
 import { isTouchDevice, filterSocials } from './utils';
 
-import fb from './icons/fb.svg';
+import fbFeed from './icons/fbFeed.svg';
 import tw from './icons/tw.svg';
 import reddit from './icons/reddit.svg';
 import gp from './icons/gp.svg';
@@ -17,7 +17,7 @@ import whatsapp from './icons/whatsapp.svg';
 import viber from './icons/viber.svg';
 
 const icons = {
-  fb,
+  fbFeed,
   tw,
   reddit,
   gp,
