@@ -45,6 +45,7 @@
     "videojs",
     "videojs-plugin"
   ],
+  "repository": "git@github.com:mkhazov/videojs-share.git",
   "author": "Mikhail Khazov <mkhazov.work@gmail.com>",
   "license": "MIT",
   "vjsstandard": {
