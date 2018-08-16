@@ -17,6 +17,8 @@ export function isMobileDevice() {
     (/iP(hone|ad|od)/i).test(window.navigator.userAgent);
 }
 
+const EXCLUDED_SOCIALS = ['whatsapp', 'viber', 'messenger'];
+
 /**
  * Filters socials list depending on platform.
  *
@@ -25,10 +27,8 @@ export function isMobileDevice() {
  * @return {Array}
  *         Filtered list of socials.
  */
-export function filterSocials(socials = []) {
-  return isMobileDevice() ?
-    socials :
-    socials.filter(
-      (social) => !['whatsapp', 'viber', 'messenger'].includes(social)
-    );
+export function filterSocials(socials = [], mobileVerification = true) {
+  return mobileVerification ?
+    isMobileDevice() ? socials : socials.filter((social) => !EXCLUDED_SOCIALS.includes(social)) :
+    socials;
 }

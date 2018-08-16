@@ -36,7 +36,7 @@ export default class ShareModalContent {
     this.player = player;
 
     this.options = options;
-    this.socials = filterSocials(options.socials);
+    this.socials = filterSocials(options.socials, options.mobileVerification);
 
     this.copyBtnTextClass = 'vjs-share__btn-text';
     this.socialBtnClass = 'vjs-share__social';
