@@ -17,8 +17,9 @@ Copying to clipboard is done via [clipboard.js][clipboardjs].
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Installation
+- [Version Support](#version-support)
 
+- [Version Support](#version-support)
 - [Installation](#installation)
 - [Usage](#usage)
   - [`<script>` Tag](#script-tag)
@@ -27,6 +28,10 @@ Copying to clipboard is done via [clipboard.js][clipboardjs].
   - [Plugin initialization](#plugin-initialization)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## Version Support
+
+This is an advanced plugin and due to that it works on videojs versions 6+ [see here](https://blog.videojs.com/feature-spotlight-advanced-plugins/).
+
 ## Installation
 
 ```sh
@@ -85,7 +90,7 @@ var shareOptions = {
   image: 'https://dummyimage.com/1200x630',
 
   // required for Facebook and Messenger
-  fbAppId: '12345', 
+  fbAppId: '12345',
   // optional for Facebook
   redirectUri: window.location.href + '#close',
 
