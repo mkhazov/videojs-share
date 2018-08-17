@@ -11,14 +11,16 @@ class ShareModal extends ModalDialog {
   }
 
   open() {
-    var player = this.player();
+    const player = this.player();
+
     player.addClass(this.playerClassName);
     super.open();
     player.trigger('sharing:opened');
   }
 
   close() {
-    var player = this.player();
+    const player = this.player();
+
     player.removeClass(this.playerClassName);
     super.close();
     player.trigger('sharing:closed');
