@@ -17,6 +17,7 @@ function getSocials() {
 }
 
 export default {
+  mobileVerification: true,
   title: 'Video',
   url,
   socials: getSocials(),
