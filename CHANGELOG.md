@@ -1,3 +1,11 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/mkhazov/videojs-share/compare/v1.1.0...v2.0.0) (2018-08-28)
+
+### Chores
+
+* npm audit fix ([2bff24f](https://github.com/mkhazov/videojs-share/commit/2bff24f))
+* revert version to 1.1.0 before publishing ([14ccbeb](https://github.com/mkhazov/videojs-share/commit/14ccbeb))
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/mkhazov/videojs-share/compare/v1.0.1...v1.1.0) (2018-02-05)
 
