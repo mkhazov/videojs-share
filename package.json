@@ -1,6 +1,6 @@
 {
   "name": "videojs-share",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Share plugin for video.js",
   "main": "dist/videojs-share.cjs.js",
   "module": "dist/videojs-share.es.js",

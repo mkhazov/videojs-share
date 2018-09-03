@@ -1,3 +1,6 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/mkhazov/videojs-share/compare/v2.0.0...v2.0.1) (2018-09-03)
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/mkhazov/videojs-share/compare/v1.1.0...v2.0.0) (2018-08-28)
 
