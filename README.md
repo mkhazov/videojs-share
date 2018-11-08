@@ -96,6 +96,9 @@ var shareOptions = {
 
   // optional for VK
   isVkParse: true,
+  
+  // optinal embed code
+  embedCode : '<iframe src="' + window.location.href + '" width="560" height="315" frameborder="0" allowfullscreen></iframe>'
 }
 
 player.share(shareOptions);

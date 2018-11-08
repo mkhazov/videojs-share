@@ -82,6 +82,20 @@ export default class ShareModalContent {
     `;
     const wrapper = document.createElement('div');
 
+    let embedContainer = '';
+
+    // Embed code container should be optional if there is no Embed Code formatter available
+    if (this.options.embedCode) {
+      embedContainer = `
+        <div class="vjs-share__subtitle hidden-xs">${this.player.localize('Embed Code')}:</div>
+        <div class="vjs-share__short-link-wrapper hidden-xs">
+          <input class="vjs-share__short-link" type="text" readonly="true" value="${this.options.embedCode}">
+          <div class="vjs-share__btn">
+            ${copyBtn}
+          </div>
+        </div>`;
+    }
+
     wrapper.innerHTML = `<div class="vjs-share">
       <div class="vjs-share__top hidden-sm">
         <div class="vjs-share__title">${this.player.localize('Share')}</div>
@@ -95,14 +109,8 @@ export default class ShareModalContent {
             ${copyBtn}
           </div>
         </div>
-
-        <div class="vjs-share__subtitle hidden-xs">${this.player.localize('Embed Code')}:</div>
-        <div class="vjs-share__short-link-wrapper hidden-xs">
-          <input class="vjs-share__short-link" type="text" readonly="true" value="${this.options.embedCode}">
-          <div class="vjs-share__btn">
-            ${copyBtn}
-          </div>
-        </div>
+        
+        ${embedContainer}
       </div>
 
       <div class="vjs-share__bottom">
