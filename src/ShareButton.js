@@ -1,3 +1,4 @@
+import videojs from 'video.js';
 const Button = videojs.getComponent('Button');
 
 /**

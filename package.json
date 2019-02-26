@@ -68,9 +68,6 @@
   "eslintConfig": {
     "env": {
       "browser": true
-    },
-    "globals": {
-      "videojs": {}
     }
   },
   "dependencies": {
