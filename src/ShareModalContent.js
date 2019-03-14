@@ -1,5 +1,5 @@
-import Clipboard from 'clipboard';
-import * as sharing from 'vanilla-sharing';
+const Clipboard = require('clipboard');
+const sharing = require('vanilla-sharing');
 
 import { isTouchDevice, filterSocials } from './utils';
 
@@ -109,7 +109,7 @@ export default class ShareModalContent {
             ${copyBtn}
           </div>
         </div>
-        
+
         ${embedContainer}
       </div>
 
@@ -153,9 +153,10 @@ export default class ShareModalContent {
     Array.from(btns).forEach((btn) => {
       btn.addEventListener('click', (e) => {
         const social = e.currentTarget.getAttribute('data-social');
+        const sharingFN = sharing[social];
 
-        if (typeof sharing[social] === 'function') {
-          sharing[social](this.socialOptions);
+        if (typeof sharingFN === 'function') {
+          sharingFN(this.socialOptions);
         }
       });
     });

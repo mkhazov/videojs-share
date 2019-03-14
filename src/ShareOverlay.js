@@ -1,6 +1,6 @@
-import ShareModal from './ShareModal';
 import ShareModalContent from './ShareModalContent';
-
+import ShareModal from './ShareModal';
+import videojs from 'video.js';
 const Component = videojs.getComponent('Component');
 
 /**
