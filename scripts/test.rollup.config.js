@@ -12,7 +12,7 @@ import resolve from 'rollup-plugin-node-resolve';
 
 export default {
   moduleName: 'videojsShareTests',
-  entry: 'test/**/*.test.js',
+  entry: 'test/plugin.test.js',
   dest: 'test/dist/bundle.js',
   format: 'iife',
   external: [
@@ -29,6 +29,9 @@ export default {
   },
   legacy: true,
   plugins: [
+    commonjs({
+      sourceMap: false
+    }),
     multiEntry({
       exports: false
     }),
@@ -41,9 +44,6 @@ export default {
       include: 'src/icons/*.svg'
     }),
     json(),
-    commonjs({
-      sourceMap: false
-    }),
     babel({
       babelrc: false,
       exclude: 'node_modules/**',
