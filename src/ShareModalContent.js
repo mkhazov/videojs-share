@@ -1,8 +1,6 @@
-const Clipboard = require('clipboard');
-const sharing = require('vanilla-sharing');
-
+import Clipboard from 'clipboard';
+import * as sharing from 'vanilla-sharing';
 import { isTouchDevice, filterSocials } from './utils';
-
 import fbFeed from './icons/fbFeed.svg';
 import tw from './icons/tw.svg';
 import reddit from './icons/reddit.svg';
