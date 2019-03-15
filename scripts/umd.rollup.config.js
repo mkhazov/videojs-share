@@ -21,6 +21,9 @@ export default {
   },
   legacy: true,
   plugins: [
+    commonjs({
+      sourceMap: false
+    }),
     resolve({
       browser: true,
       main: true,
@@ -30,9 +33,6 @@ export default {
       include: 'src/icons/*.svg'
     }),
     json(),
-    commonjs({
-      sourceMap: false
-    }),
     babel({
       babelrc: false,
       exclude: 'node_modules/**',
