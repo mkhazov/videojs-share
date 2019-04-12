@@ -10,6 +10,7 @@ import linkedin from './icons/linkedin.svg';
 import vk from './icons/vk.svg';
 import ok from './icons/ok.svg';
 import mail from './icons/mail.svg';
+import email from './icons/email.svg';
 import telegram from './icons/telegram.svg';
 import whatsapp from './icons/whatsapp.svg';
 import viber from './icons/viber.svg';
@@ -24,6 +25,7 @@ const icons = {
   vk,
   ok,
   mail,
+  email,
   telegram,
   whatsapp,
   viber
