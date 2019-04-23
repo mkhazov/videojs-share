@@ -1,3 +1,6 @@
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/mkhazov/videojs-share/compare/v3.1.0...v3.2.0) (2019-04-23)
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/mkhazov/videojs-share/compare/v2.0.1...v3.0.0) (2018-11-09)
 
