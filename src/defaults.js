@@ -1,8 +1,8 @@
 const url = getUrl();
 
 function getUrl() {
-  if (typeof window === "undefined") {
-    return "";
+  if (typeof window === 'undefined') {
+    return '';
   }
   return window.location.href;
 }
