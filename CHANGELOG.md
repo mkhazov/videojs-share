@@ -1,3 +1,10 @@
+<a name="3.2.1"></a>
+## [3.2.1](https://github.com/mkhazov/videojs-share/compare/v3.2.0...v3.2.1) (2019-06-17)
+
+### Chores
+
+* degrade version ([f783b8b](https://github.com/mkhazov/videojs-share/commit/f783b8b))
+
 <a name="3.2.0"></a>
 # [3.2.0](https://github.com/mkhazov/videojs-share/compare/v3.1.0...v3.2.0) (2019-04-23)
 
