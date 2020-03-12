@@ -8,8 +8,11 @@ Supported messengers: Messenger, Telegram, Whatsapp, Viber.
 Sharing functioonality provided by [vanilla-sharing][vanilla-sharing] library.
 Copying to clipboard is done via [clipboard.js][clipboardjs].
 
-[![npm](https://img.shields.io/npm/v/videojs-share.svg)](https://www.npmjs.com/package/videojs-share)
+[![Build Status](https://github.com/mkhazov/videojs-share/workflows/Node.js%20CI/badge.svg)](https://github.com/mkhazov/videojs-share/actions?query=workflow%3A%22Node.js+CI%22)
 [![Build Status](https://travis-ci.org/mkhazov/videojs-share.svg?branch=master)](https://travis-ci.org/mkhazov/videojs-share)
+[![bundlephobia](https://badgen.net/bundlephobia/minzip/videojs-share)](https://bundlephobia.com/result?p=videojs-share)
+[![npm](https://img.shields.io/npm/v/videojs-share.svg)](https://www.npmjs.com/package/videojs-share)
+[![npm](https://img.shields.io/npm/dm/videojs-share.svg)](https://www.npmjs.com/package/videojs-share)
 [![David](https://david-dm.org/neuron-digital/videojs-share.svg)](https://david-dm.org/neuron-digital/videojs-share)
 [![David](https://david-dm.org/neuron-digital/videojs-share/dev-status.svg)](https://david-dm.org/neuron-digital/videojs-share?type=dev)
 
