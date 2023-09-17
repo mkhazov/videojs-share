@@ -13,14 +13,12 @@ Copying to clipboard is done via [clipboard.js][clipboardjs].
 [![bundlephobia](https://badgen.net/bundlephobia/minzip/videojs-share)](https://bundlephobia.com/result?p=videojs-share)
 [![npm](https://img.shields.io/npm/v/videojs-share.svg)](https://www.npmjs.com/package/videojs-share)
 [![npm](https://img.shields.io/npm/dm/videojs-share.svg)](https://www.npmjs.com/package/videojs-share)
-[![David](https://david-dm.org/neuron-digital/videojs-share.svg)](https://david-dm.org/neuron-digital/videojs-share)
-[![David](https://david-dm.org/neuron-digital/videojs-share/dev-status.svg)](https://david-dm.org/neuron-digital/videojs-share?type=dev)
 
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-- [Version Support](#version-support)
+
 
 - [Version Support](#version-support)
 - [Installation](#installation)
@@ -31,6 +29,7 @@ Copying to clipboard is done via [clipboard.js][clipboardjs].
   - [Plugin initialization](#plugin-initialization)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Version Support
 
 This is an advanced plugin and due to that it works on videojs versions 6+ [see here](https://blog.videojs.com/feature-spotlight-advanced-plugins/).
@@ -59,12 +58,12 @@ This is the simplest case. Get the script in whatever way you prefer and include
 When using with Browserify, install videojs-share via npm and `require` the plugin as you would any other module.
 
 ```js
-var videojs = require('video.js');
+var videojs = require("video.js");
 
 // The actual plugin function is exported by this module, but it is also
 // attached to the `Player.prototype`; so, there is no need to assign it
 // to a variable.
-require('videojs-share');
+require("videojs-share");
 ```
 
 ### RequireJS/AMD
@@ -72,8 +71,8 @@ require('videojs-share');
 When using with RequireJS (or another AMD library), get the script in whatever way you prefer and `require` the plugin as you normally would:
 
 ```js
-require(['video.js', 'videojs-share'], function(videojs) {
-  var player = videojs('my-video');
+require(["video.js", "videojs-share"], function (videojs) {
+  var player = videojs("my-video");
 
   player.share();
 });
@@ -82,27 +81,43 @@ require(['video.js', 'videojs-share'], function(videojs) {
 ### Plugin initialization
 
 ```js
-var player = videojs('my-video');
+var player = videojs("my-video");
 
 var shareOptions = {
-  socials: ['fb', 'tw', 'reddit', 'gp', 'messenger', 'linkedin', 'telegram', 'whatsapp', 'viber', 'vk', 'ok', 'mail'],
+  socials: [
+    "fb",
+    "tw",
+    "reddit",
+    "gp",
+    "messenger",
+    "linkedin",
+    "telegram",
+    "whatsapp",
+    "viber",
+    "vk",
+    "ok",
+    "mail",
+  ],
 
   url: window.location.href,
-  title: 'videojs-share',
-  description: 'video.js share plugin',
-  image: 'https://dummyimage.com/1200x630',
+  title: "videojs-share",
+  description: "video.js share plugin",
+  image: "https://dummyimage.com/1200x630",
 
   // required for Facebook and Messenger
-  fbAppId: '12345',
+  fbAppId: "12345",
   // optional for Facebook
-  redirectUri: window.location.href + '#close',
+  redirectUri: window.location.href + "#close",
 
   // optional for VK
   isVkParse: true,
-  
+
   // optinal embed code
-  embedCode : '<iframe src="' + window.location.href + '" width="560" height="315" frameborder="0" allowfullscreen></iframe>'
-}
+  embedCode:
+    '<iframe src="' +
+    window.location.href +
+    '" width="560" height="315" frameborder="0" allowfullscreen></iframe>',
+};
 
 player.share(shareOptions);
 ```
